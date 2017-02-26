@@ -16,10 +16,10 @@
 		5E7062651B1B8B64008AE365 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E7062671B1B8B64008AE365 /* InfoPlist.strings */; };
 		5E70626C1B1B9379008AE365 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E70626E1B1B9379008AE365 /* Localizable.strings */; };
 		5E79D6421B23668700644C49 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79D6411B23668700644C49 /* CoreDataStack.swift */; };
-		5E9B8F711BAE377900D9B6E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E9B8F701BAE377900D9B6E7 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
-		5EC113BC1BAF18AA00CCE373 /* CoffeeTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EC113BA1BAF18AA00CCE373 /* CoffeeTimer.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
-		5EC113BF1BAF192500CCE373 /* TimerModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC113BD1BAF192500CCE373 /* TimerModel+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		5EC113C01BAF192500CCE373 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC113BE1BAF192500CCE373 /* TimerModel.swift */; settings = {ASSET_TAGS = (); }; };
+		5E9B8F711BAE377900D9B6E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E9B8F701BAE377900D9B6E7 /* LaunchScreen.storyboard */; };
+		5EC113BC1BAF18AA00CCE373 /* CoffeeTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EC113BA1BAF18AA00CCE373 /* CoffeeTimer.xcdatamodeld */; };
+		5EC113BF1BAF192500CCE373 /* TimerModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC113BD1BAF192500CCE373 /* TimerModel+CoreDataProperties.swift */; };
+		5EC113C01BAF192500CCE373 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC113BE1BAF192500CCE373 /* TimerModel.swift */; };
 		5EC4B57B1A61457600792B2B /* TimerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4B57A1A61457600792B2B /* TimerListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -201,14 +201,16 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Ash Furrow";
 				TargetAttributes = {
 					5E1F8CDC19839CB000A83E4F = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0810;
 					};
 					5E1F8CEE19839CB100A83E4F = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0810;
 						TestTargetID = 5E1F8CDC19839CB000A83E4F;
 					};
 				};
@@ -324,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -333,8 +336,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -343,6 +348,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -367,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -376,8 +383,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -385,6 +394,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -394,6 +404,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -407,6 +418,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ashfurrow.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -419,6 +431,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ashfurrow.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -438,6 +451,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ashfurrow.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -454,6 +468,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ashfurrow.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;

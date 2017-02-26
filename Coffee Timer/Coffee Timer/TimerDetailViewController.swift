@@ -74,7 +74,7 @@ class TimerDetailViewController: UIViewController {
         startStopButton.setTitleColor(.redColor(), forState: .Normal)
         timer = NSTimer.scheduledTimerWithTimeInterval(1,
             target: self,
-            selector: "timerFired",
+            selector: #selector(TimerDetailViewController.timerFired),
             userInfo: nil,
             repeats: true)
 

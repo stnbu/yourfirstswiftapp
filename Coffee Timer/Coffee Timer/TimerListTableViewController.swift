@@ -98,7 +98,7 @@ class TimerListTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, canPerformAction action: Selector, forRowAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
-        if action == "copy:" {
+        if action == #selector(UIResponderStandardEditActions.copy(_:)) {
             return true
         }
 
